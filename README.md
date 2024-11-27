@@ -1,7 +1,8 @@
 ---
-title: "Metodo de Punto Fijo"
+title: "Metodos Abiertos"
+subtitle: "Metodo de punto fijo"
 author: "Lenin Pocoaca"
-date: "18-11-24"
+date: "28-11-24"
 ---
 # METODO DE PUNTO FIJO
 
@@ -118,7 +119,7 @@ $$g'(6)=\frac{\sqrt{3} \, 30}{2 \sqrt{10\pi}(9)}\simeq0.515$$
 
 Así, entonces se verifica que:
 
-$$|g_1'(h)|\leq k, \quad 0<k\le 1;\quad\text{para todas las } h\in [0, 6]$$
+$$|g_1'(h)|\leq k,\text{ } 0<k\le 1;text{ para todas las } h\in [0, 6]$$
 
 Por lo tanto según el **Teorema de punto fijo** se confirma la convergencia para $g_1(h)$.
 
@@ -126,10 +127,12 @@ De esta forma ya no es necesario verificar la convergencia para $g_2(h)$, entonc
 
 #### Método iterativo de punto fijo
 
-No es posible determinar explicitamente el punto fijo para g_1(h). Sin embargo, se puede determinar las aproximaciones para este punto fijo con cualquier grado especifico de precisión.
+No es posible determinar explicitamente el punto fijo para $g_1(h)$. Sin embargo, se puede determinar las aproximaciones para este punto fijo con cualquier grado especifico de precisión.
 
 
-Al ser un método abierto, se requiere unicamente un valor de inicio $h$. Para aproximar el punto fijo de una función $g$ se elige una aproximación inicial $h_0$, y se genéra una sucesión de la forma $h_n=g_1(h_{n-1})$ para cada $n\ge 1$, y se obtiene una solución para $h = g_1(h)$.
+Al ser un método abierto, se requiere unicamente un valor de inicio $h$. 
+
+Para aproximar el punto fijo de una función $g$ se elige una aproximación inicial $h_0$, y se genéra una sucesión de la forma $h_n=g_1(h_{n-1})$ para cada $n\ge 1$, y se obtiene una solución para $h = g_1(h)$.
 
 Con ayuda de una hoja de cálculo se procede a realizar el método iterativo de **punto fijo**.
 
@@ -141,19 +144,17 @@ De esta forma se obtiene los siguientes resultados:
 
 ![Resultados del Método Iterativo de Punto Fijo](img5.png)
 
-donde la altura $h$ toma un valor aproximado de $2.03 [m]$.
-
-haciendo uso de un graficador en linea se puede ver que la fúnción interseca con el eje $x$ cerca del valor hallado.
+haciendo uso de un graficador en linea podemos ver que se obtuvo una buena aproximación para h.
 
 ![Grafica de f](img6.png)
 
 #### Interpretación de los resultados
 
-En base a los resultados, la profundidad del agua en el tanque esfereico debe ser de aproximadamente $2.03m$ para albergar $30m^3$ de agua.
+En base a los resultados, la profundidad del agua en el tanque esfereico; debe ser de aproximadamente $2.03m$ para albergar $30m^3$ de agua.
 
 # Conclusión
 
-Muchas ecuaciones que se encuentran en la práctica no tienen soluciones analíticas faciles de encontrar, y por esa razón se usan métodos como el de **punto fijo**; que nos permite hallar un valor aproximado de las raices, para este tipo de ecuaciones.
+Muchas ecuaciones que se encuentran en la práctica no tienen soluciones analíticas faciles de encontrar, y por esa razón se usan métodos numéricos como el de **punto fijo**; que nos permite hallar un valor aproximado de las raices, para este tipo de ecuaciones.
 
 # REFERENCIAS
 
